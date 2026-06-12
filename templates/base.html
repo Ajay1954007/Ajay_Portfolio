@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajay Yadav - Data Analyst</title>
+    <meta name="description"
+        content="Portfolio of Ajay Yadav - Data Analyst specializing in Python, SQL, and Power BI.">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="{{ url_for('home') }}" class="nav__logo">
+                Ajay Yadav
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="{{ url_for('home') }}"
+                            class="nav__link {% if request.endpoint == 'home' %}active-link{% endif %}">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="{{ url_for('about') }}"
+                            class="nav__link {% if request.endpoint == 'about' %}active-link{% endif %}">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="{{ url_for('projects') }}"
+                            class="nav__link {% if request.endpoint == 'projects' %}active-link{% endif %}">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="{{ url_for('contact') }}"
+                            class="nav__link {% if request.endpoint == 'contact' %}active-link{% endif %}">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+                <button class="theme-toggle" id="theme-button">
+                    <i class="ri-moon-line"></i>
+                </button>
+                <div class="nav__toggle" id="nav-toggle" style="margin-left: 1rem;">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__copy">&#169; 2026 Ajay Yadav. All rights reserved.</p>
+                <div class="footer__links">
+                    <a href="https://github.com/Ajay1954007" target="_blank" class="footer__link">GitHub</a>
+                    <a href="https://www.linkedin.com/in/ajay-yadav-ab6757244?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                        target="_blank" class="footer__link">LinkedIn</a>
+                    <a href="ajayyadav16239@gmail.com" class="footer__link">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

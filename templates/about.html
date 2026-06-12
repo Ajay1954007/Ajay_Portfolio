@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <div class="page__header">
+            <h1 class="page__title">About Me</h1>
+        </div>
+        
+        <div class="about__grid">
+            <!-- Summary -->
+            <div class="about__block">
+                <h2 class="block__title"><i class="ri-user-smile-line"></i> Professional Summary</h2>
+                <p class="text-muted" style="font-size: 1.05rem; line-height: 1.7;">
+                    I am a passionate Data Analyst with 3 years of academic and practical experience specializing in Python, SQL, Excel, Pandas, and NumPy. I excel in Data Cleaning, Exploratory Data Analysis (EDA), Dashboard Development, and Automation. My goal is to uncover hidden patterns in data to support strategic decision-making and build impactful solutions.
+                </p>
+            </div>
+
+            <!-- Categorized Skills -->
+            <div class="about__block">
+                <h2 class="block__title"><i class="ri-code-box-line"></i> Skills</h2>
+                <div class="skills__grid">
+                    <div class="card skill__category">
+                        <h3 class="skill__category-title">Programming</h3>
+                        <div class="skill__list">
+                            <span class="skill__item"><i class="ri-python-line"></i> Python</span>
+                            <span class="skill__item"><i class="ri-database-2-line"></i> SQL</span>
+                        </div>
+                    </div>
+                    <div class="card skill__category">
+                        <h3 class="skill__category-title">Data Analysis</h3>
+                        <div class="skill__list">
+                            <span class="skill__item"><i class="ri-bubble-chart-line"></i> Pandas</span>
+                            <span class="skill__item"><i class="ri-apps-2-line"></i> NumPy</span>
+                            <span class="skill__item"><i class="ri-brain-line"></i> Scikit-Learn</span>
+                        </div>
+                    </div>
+                    <div class="card skill__category">
+                        <h3 class="skill__category-title">Visualization</h3>
+                        <div class="skill__list">
+                            <span class="skill__item"><i class="ri-bar-chart-2-line"></i> Power BI</span>
+                            <span class="skill__item"><i class="ri-line-chart-line"></i> Matplotlib</span>
+                            <span class="skill__item"><i class="ri-pie-chart-2-line"></i> Seaborn</span>
+                        </div>
+                    </div>
+                    <div class="card skill__category">
+                        <h3 class="skill__category-title">Tools</h3>
+                        <div class="skill__list">
+                            <span class="skill__item"><i class="ri-file-excel-2-line"></i> Excel</span>
+                            <span class="skill__item"><i class="ri-github-fill"></i> Git & GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vertical Experience Timeline -->
+            <div class="about__block">
+                <h2 class="block__title"><i class="ri-briefcase-4-line"></i> Experience</h2>
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">2024 - Present</span>
+                            <h3 class="timeline__title">Data Analyst Trainee</h3>
+                            <p class="timeline__subtitle">Codenera Pvt Ltd</p>
+                            <p class="text-muted text-small">Assisting in data extraction, cleaning, and preliminary analysis. Building internal dashboards to monitor key performance indicators using Power BI and Python.</p>
+                        </div>
+                    </div>
+                    <!-- Add more timeline items here -->
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="about__block">
+                <h2 class="block__title"><i class="ri-graduation-cap-line"></i> Education</h2>
+                <div class="card">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+                        <div>
+                            <h3 style="margin-bottom: 0.25rem;">B.Sc Computer Science</h3>
+                            <p class="text-muted" style="margin-bottom: 0;">Shivaji University</p>
+                        </div>
+                        <span style="background-color: var(--bg-alt); padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; border: 1px solid var(--border-color);">2021 - 2024</span>
+                    </div>
+                    <p class="text-small" style="color: var(--accent-color); font-weight: 500; margin-bottom: 0;">CGPA: 8.40</p>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="about__block">
+                <h2 class="block__title"><i class="ri-award-line"></i> Certifications</h2>
+                <div class="cert__grid">
+                    <div class="card cert__card">
+                        <i class="ri-medal-line cert__icon"></i>
+                        <div>
+                            <h3 style="font-size: 1rem; margin-bottom: 0.25rem;">SQL Basic</h3>
+                            <p class="text-muted text-small" style="margin-bottom: 0;">Cognifyz Internship</p>
+                        </div>
+                    </div>
+                    <div class="card cert__card">
+                        <i class="ri-medal-line cert__icon"></i>
+                        <div>
+                            <h3 style="font-size: 1rem; margin-bottom: 0.25rem;">Data Analytics with Python</h3>
+                            <p class="text-muted text-small" style="margin-bottom: 0;">Coursera</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+{% endblock %}

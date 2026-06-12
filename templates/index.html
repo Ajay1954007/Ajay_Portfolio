@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="section hero">
+    <div class="container">
+        <div class="hero__grid">
+            <div class="hero__content">
+                <h1 class="hero__title">Ajay Yadav</h1>
+                <h2 class="hero__subtitle">Data Analyst | Python Developer | SQL Enthusiast</h2>
+
+                <p class="hero__description">
+                    Building robust data pipelines, interactive dashboards, and actionable insights. I specialize in
+                    transforming complex datasets into strategic business solutions that drive growth.
+                </p>
+
+                <div class="hero__actions">
+                    <a href="{{ url_for('projects') }}" class="btn btn-primary">
+                        View Projects <i class="ri-arrow-right-line"></i>
+                    </a>
+                    <a href="{{ url_for('static', filename='img/Ajay_Resume.pdf') }}" class="btn btn-secondary"
+                        download>
+                        <i class="ri-download-line"></i> Resume
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero__image-wrapper">
+                <img src="{{ url_for('static', filename='img/profile.jpeg') }}" alt="Ajay Yadav" class="hero__image">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
